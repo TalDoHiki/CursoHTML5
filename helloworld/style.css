@@ -1,0 +1,10 @@
+body {
+    background: rgb(179, 0, 0);
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 30pt;
+    color: black;
+    text-shadow: 2px 2px 2px grey;
+}

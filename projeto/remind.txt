@@ -1,0 +1,7 @@
+colors
+
+Black #0D0D0D
+Dark Red #732424
+Red #D92323
+Dark R #8C6723
+Royal #F2E852
