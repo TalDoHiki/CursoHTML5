@@ -2,13 +2,46 @@
 
 body {
     background-image: url('projeto/background.jpg');
-    background-color: white;
+    background-color: #dddddd;
 
+}
+
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;  /*top left down right */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
 }
 
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+header#header1 img#icon {
+    text-align: center;
+}
+
+header#header1 {
+    border-bottom: 1px #606060 solid;
+}
+
+header#header1 h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30pt;
+    color: #606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#header1 h2 {
+    font-family: Arial, sans-serif;
+    color: #888888;
+    font-size: 15pt;
+    padding: 0px;
+    margin-top: 0px;
 }
 
 /* Images Format */
@@ -54,7 +87,7 @@ nav#menu ul{
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 770px;
 }
 
 nav#menu li {
@@ -62,8 +95,24 @@ nav#menu li {
     background-color: #dddddd;
     padding: 10px;
     margin: 2px;
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
 }
 
 nav#menu h1 {
     display: none;
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
 }
