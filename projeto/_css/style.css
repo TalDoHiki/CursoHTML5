@@ -142,6 +142,18 @@ table#tabspec {
 table#tabspec td {
     border: 1px solid gray;
     padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tablespec td.cl {
+    color: white;
+    background-color: #606060;
+    
+}
+
+table#tablespec td.cr {
+
 }
 
 section#bodi p {
