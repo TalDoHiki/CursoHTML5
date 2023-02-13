@@ -8,7 +8,7 @@
 body {
     background-image: url('projeto/background.jpg');
     background-color: #dddddd;
-
+    font-family: Arial, sans-serif;
 }
 
 div#interface {
@@ -22,6 +22,16 @@ div#interface {
 p {
     text-align: justify;
     text-indent: 50px;
+}
+
+a {
+    color: #8d8d8d;
+}
+
+a:hover {
+    background-color: #606060;
+    color: white;
+    text-decoration: none;
 }
 
 header#header1 img#icon {
@@ -105,6 +115,7 @@ nav#menu li {
     -webkit-transition: background-color 1s;
     -o-transition: background-color 1s;
     transition: background-color 1s;
+    border-radius: 5pt;
 }
 
 nav#menu li:hover {
@@ -126,10 +137,42 @@ nav#menu a:hover {
 
 section#bodi {
     display: block;
-    width: 520px;
+    width: 500px;
     float: left;
     border-right: 1px solid black;
     padding-right: 15px;
+}
+
+article#main-not h2 {
+    font-size: 13pt;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#headart h1 {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.right {
+    text-align: right;
+}
+
+header#headart h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#headart h3 {
+    font-size: 12px;
+    color: #606060;
 }
 
 table#tabspec {
@@ -146,20 +189,31 @@ table#tabspec td {
     vertical-align: middle;
 }
 
-table#tablespec td.cl {
+table#tabspec td.cl {
     color: white;
     background-color: #606060;
     vertical-align: top;
     font-weight: bold;
 }
 
-table#tablespec td.cr {
-    color: #cecece;
+table#tabspec td.cr {
+    color: #000000;
+    background-color: #cecece;
 }
 
-table#tablespec caption {
+table#tabspec caption {
     color: #888;
-    font-size: 20pt;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabspec caption span {
+    display: block;
+    float: right;
+    color: black;
+    font-size: 8pt;
+    margin-top: 10px;
+
 }
 
 section#bodi p {
@@ -169,7 +223,25 @@ section#bodi p {
 aside#lat {
     display: block;
     width: 350px;
-    float: right; 
+    float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+aside#lat h1 {
+    font-family: 'FontLogo', sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lat h2 {
+    background-color: #606060;
+    font-size: 13pt;
+    color: #ffffff;
+    padding: 5px;
 }
 
 footer#foti {
