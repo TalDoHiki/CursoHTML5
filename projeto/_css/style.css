@@ -149,11 +149,17 @@ table#tabspec td {
 table#tablespec td.cl {
     color: white;
     background-color: #606060;
-    
+    vertical-align: top;
+    font-weight: bold;
 }
 
 table#tablespec td.cr {
+    color: #cecece;
+}
 
+table#tablespec caption {
+    color: #888;
+    font-size: 20pt;
 }
 
 section#bodi p {
