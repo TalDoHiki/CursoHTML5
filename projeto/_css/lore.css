@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+div#idk {
+    width: 900px;
+    height: 580px;
+    margin: auto;
+}
+
+audio#music {
+    display: block;
+    position: relative;
+    left: 575px;
+    top: 500px;
+    width: 300px;
+}
+
+video#movie {
+    display: block;
+    position: relative;
+    left: 90px;
+    top: 85px;
+    width: 440px;
+}

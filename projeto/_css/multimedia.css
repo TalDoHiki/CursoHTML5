@@ -16,7 +16,7 @@ ul#album-p li {
     border: 5px solid white;
     background-color: white;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-    -webkit-transition: all .1s ease-in;
+    transition: all .1s ease-in;
 }
 
 ul#album-p li span {
@@ -34,7 +34,7 @@ ul#album-p li:hover span {
 }
 
 ul#album-p li:hover {
-    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
 }
 
 ul#album-p li#ph01 {

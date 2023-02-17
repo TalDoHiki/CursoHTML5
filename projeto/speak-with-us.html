@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safe&Sound Offcial Site</title>
     <link rel="stylesheet" href="_css/style.css">
+    <link rel="stylesheet" href="_css/form.css">
 </head>
 <script src="_javascript/script.js"></script>
 <body>
@@ -29,9 +30,79 @@
                 </ul>
             </nav>
         </header>
-        
+    
+        <section id="bodi-full">
+            <article id="main-not">
+                <header id="headart">
+                    <hgroup>
+                        <h3>Server > Speak with us</h3>
+                        <h1>Form</h1>
+                        <h2>by TalDoHiki</h2>
+                        <h3 class="right">First created in 16/02/2023</h3>
+                    </hgroup>
+                </header>
+                <form method="post" id="fcontact" action="mailto:guearfear60@gmail.com">
+                    <fieldset id="user"><legend>User Identification</legend>
+                        <p><label for="cname">Name: </label> <input type="text" name="tname" id="cname" size="30" maxlength="30" placeholder="Full Name"></p>
+                        <p><label for="cword">Password: </label> <input type="password" name="tpass" id="cword" size="8" maxlength="8" placeholder="8 digits"></p>
+                        <p><label for="cmail">E-mail: </label> <input type="email" name="tmail" id="cmail" placeholder="example@exemp.exp" size="20" maxlength="40"></p>
+                        <fieldset id="gender"><legend>Gender</legend>
+                            <input type="radio" name="tgender" id="cmal"> <label for="cmal">Male</label><br>
+                            <input type="radio" name="tgender" id="cfem"> <label for="cfem">Female</label></fieldset>
+                        <p><label for="cdate">Birthdate: <input type="date" name="tbirth" id="cdate"></label></p>
+                    </fieldset>
+
+                    <fieldset id="address"><legend>User Address</legend>
+                        <p><label for="crua">Public Place: </label><input type="text" name="trua" id="crua" size="13" maxlength="80" placeholder="Rua, Av, Trav,"></p>
+                        <p><label for="cnumb">Number: </label><input type="number" name="tnumb" id="cnumb" min="0" max="99999" placeholder=""></p>
+                        <p><label for="cstate">State: </label>
+                            <select name="tst" id="cst">
+                                <optgroup label="Southeast Region">
+                                    <option value="sp">São Paulo</option>
+                                    <option value="rj">Rio de Janeiro</option>
+                                    <option value="mg">Minas Gerais</option>
+                                </optgroup>
+                                
+                                <optgroup label="South Region">
+                                    <option value="sc">Santa Catarina</option>
+                                    <option value="rs">Rio Grande Do Sul</option>
+                                    <option value="pr">Paraná</option>
+                                </optgroup>
+                            </select></p>
+                        <p><label for="ccit">City: </label><input type="text" name="tcit" id="ccit" maxlength="40" size="20" placeholder="Your city" list="cities"></p>
+                        <datalist id="cities">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niterói"></option>
+                            <option value="Belford Roxo"></option>
+                        </datalist>
+                    </fieldset>
+
+                    <fieldset id="message"><legend>User Message</legend>
+                        <p><label for="curg">>Urgency Level:</label>
+                        Min<input type="range" name="turg" id="curg" min="0" max="10">Max</p>
+                        <p><label for="cmsg">>Message:</label>
+                        <textarea name="tmsg" id="cmsg" cols="45" rows="5" placeholder="Type here your message"></textarea></p>
+                    </fieldset>
+
+                    <fieldset id="request"><legend>Want a Invite</legend>
+                        <p><input type="checkbox" name="tbox" id="cbox" checked>
+                            <label for="cbox">I would like to adquire a Safe&Sound invite whenever it's avaible</label></p>
+                        <p><label for="crole">Role:</label> <input type="color" name="trole" id="crole"></p>
+                        <p><label for="camt">Amount:</label><input type="number" name="tamt" id="camt" min="0" max="5"></p>
+                        <p><label for="ctot">Total Price: R$</label><input type="number" name="ttot" id="ctot" placeholder="Total value to pay" readonly></p>
+                    </fieldset>
+
+                    <input type="image" name="tsend" src="_image/button.png" width="200">
+                </form>
+
+
+            </article>    
+        </section>
+
+
         <footer id="foti">
-            <p>Copyright &copy; 2023 - by TalDoHiki#6728 <br/>
+            <p>Copyright &copy; 2023 - by TalDoHiki <br/>
             <a href="https://github.com/TalDoHiki" target="_blank">Github</a> | 
             <a href="https://twitter.com/TalDoHiki" target="_blank">Twitter</a></p>
         </footer>
