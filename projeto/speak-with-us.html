@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="_css/form.css">
 </head>
 <script src="_javascript/script.js"></script>
+<script>
+    function calc_total() {
+        var amt = parseInt(document.querySelector('input#camt').value)
+        tot = amt * 1500;
+        document.querySelector('input#ctot').value = tot
+    }
+</script>
 <body>
     <div id="interface">
 
@@ -41,7 +48,7 @@
                         <h3 class="right">First created in 16/02/2023</h3>
                     </hgroup>
                 </header>
-                <form method="post" id="fcontact" action="mailto:guearfear60@gmail.com">
+                <form method="post" id="fcontact" action="mailto:guearfear60@gmail.com" oninput="calc_total()">
                     <fieldset id="user"><legend>User Identification</legend>
                         <p><label for="cname">Name: </label> <input type="text" name="tname" id="cname" size="30" maxlength="30" placeholder="Full Name"></p>
                         <p><label for="cword">Password: </label> <input type="password" name="tpass" id="cword" size="8" maxlength="8" placeholder="8 digits"></p>
